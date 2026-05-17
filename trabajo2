@@ -1,1 +1,19 @@
-
+monto_compra = float(input("Ingrese el monto total de la compra: $"))
+if monto_compra > 5000:
+    porcentaje = 0.30  # 30% de descuento
+elif monto_compra > 3000:
+    porcentaje = 0.20  # 20% de descuento
+elif monto_compra > 1000:
+    porcentaje = 0.10  # 10% de descuento
+else:
+    porcentaje = 0.0   # No tiene beneficio (0%)
+# 3. Hacer los cálculos paso a paso
+descuento_ahorrado = monto_compra * porcentaje
+total_a_pagar = monto_compra - descuento_ahorrado
+# Pasamos el decimal (ej: 0.30) a un número entero para el texto (ej: 30)
+porcentaje_pantalla = porcentaje * 100
+print("---------------------------------")
+print("Descuento aplicado:", porcentaje_pantalla, "%")
+print("Dinero ahorrado: $", descuento_ahorrado)
+print("Total neto a pagar: $", total_a_pagar)
+print("---------------------------------")
