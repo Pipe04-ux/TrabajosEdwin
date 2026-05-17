@@ -1,1 +1,28 @@
-
+horas_trabajadas = float(input("Ingrese la cantidad de horas trabajadas: "))
+pago_por_hora = float(input("Ingrese el valor de una hora normal: $"))
+if horas_trabajadas <= 40:
+    horas_normales = horas_trabajadas
+    extras_dobles = 0
+    extras_triples = 0
+else:
+    horas_normales = 40
+    total_extras = horas_trabajadas - 40
+    if total_extras <= 8:
+        extras_dobles = total_extras
+        extras_triples = 0
+    else:
+        extras_dobles = 8  
+        extras_triples = total_extras - 8  
+pago_normal = horas_normales * pago_por_hora
+pago_doble = extras_dobles * (pago_por_hora * 2)
+pago_triple = extras_triples * (pago_por_hora * 3)
+pago_total = pago_normal + pago_doble + pago_triple
+print("---------------------------------")
+print("Horas normales:", horas_normales)
+print("Horas extras al doble:", extras_dobles)
+print("Horas extras al triple:", extras_triples)
+print("Pago por horas normales: $", pago_normal)
+print("Pago por horas dobles: $", pago_doble)
+print("Pago por horas triples: $", pago_triple)
+print("Total final a pagar: $", pago_total)
+print("---------------------------------")
