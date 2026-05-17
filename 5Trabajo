@@ -1,0 +1,15 @@
+print("Este es el programa de notas del Profe Jairo")
+continuar = "s"
+while continuar == "s":
+    nota1 = float(input("Ingrese la nota 1: "))
+    nota2 = float(input("Ingrese la nota 2: "))
+    nota3 = float(input("Ingrese la nota 3: "))
+    promedio = (nota1 + nota2 + nota3) / 3
+    print("El promedio del estudiante es:", promedio)
+    if promedio >= 3.0:
+        print("El estudiante: ganó")
+    else:
+        print("El estudiante: perdió")
+    # 4. Preguntamos si desea continuar
+    continuar = input("¿Desea ingresar las notas de otro estudiante? (s/n): ")
+print("Fin del programa\n")
