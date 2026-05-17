@@ -1,0 +1,11 @@
+print("Este es el programa de notas del Profe")
+continuar = "s"
+while continuar == "s":
+    nota = float(input("Ingrese la nota del estudiante: "))
+    if nota >= 3.0:
+        print("El estudiante: ganó")
+    else:
+        print("El estudiante: perdió")
+    continuar = input("¿Desea ingresar otra nota? (s/n): ")
+    print("---------------------------------------")
+print("Fin del programa\n")
