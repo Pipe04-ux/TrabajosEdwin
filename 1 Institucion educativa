@@ -1,1 +1,12 @@
-# TrabajosEdwin
+nota = float(input(" Ingrese la nota del estudiante entre (1 y 5) "))
+if nota < 1 or nota > 5:
+    print ("Error! La nota no es valida, debe estar entre 1 y 5") 
+elif nota >= 1.0 and nota < 2.0:
+    print("Nivel: malo")
+elif nota >= 2 and nota < 3:  
+    print("Nivel: Regular")
+elif nota >= 3 and nota < 4:
+    print("Nivel: Bueno")
+else:
+    print("Nivel: Excelente")
+
