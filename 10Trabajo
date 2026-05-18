@@ -1,0 +1,21 @@
+print("Números primos entre 1 y 1000:")
+i = 2
+while i <= 1000:
+    es_primo = True
+
+    j = 2
+    
+    while j < i:
+        if i % j == 0:
+            es_primo = False
+            break 
+            
+        j = j + 1 
+        
+    if es_primo:
+        print(i)
+        
+    i = i + 1 
+
+print("------------------------------")
+print("Fin del programa")
