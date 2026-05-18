@@ -1,0 +1,31 @@
+print("Validador de Correo Electrónico")
+correo = input("Ingrese la dirección de correo: ")
+
+posicion_arroba = -1
+posicion_punto = -1
+tiene_espacios = False
+
+i = 0
+largo_correo = len(correo)
+
+while i < largo_correo:
+    caracter = correo[i]
+    
+    if caracter == " ":
+        tiene_espacios = True
+    elif caracter == "@":
+        posicion_arroba = i
+    elif caracter == ".":
+       
+        if posicion_arroba != -1:
+            posicion_punto = i
+            
+    i = i + 1
+
+if tiene_espacios == False and posicion_arroba > 0 and posicion_punto > posicion_arroba and posicion_punto < largo_correo - 1:
+    print("Resultado: SÍ es una dirección de correo electrónico válida.")
+else:
+    print("Resultado: NO es una dirección de correo electrónico válida.")
+
+print("---------------------------------")
+print("Fin del programa")
