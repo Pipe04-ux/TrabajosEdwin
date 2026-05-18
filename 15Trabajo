@@ -1,0 +1,3 @@
+texto = "El manejo de cadenas de caracteres es uno de los aspectos criticos de cualquier lenguaje de programacion"
+cantidad = texto.count("a")
+print("La letra a aparece", cantidad, "veces en el texto")
