@@ -1,3 +1,9 @@
 texto = "El manejo de cadenas de caracteres es uno de los aspectos criticos de cualquier lenguaje de programacion"
-cantidad = texto.count("a")
+
+cantidad = 0
+
+for letra in texto:
+    if letra == "a":
+        cantidad = cantidad + 1
+
 print("La letra a aparece", cantidad, "veces en el texto")
