@@ -1,0 +1,18 @@
+print("Programa para sumar los valores de un vector")
+
+vector = [5, 12, 8, 23, 4, 11, 45, 7, 19, 2]
+suma_total = 0
+
+i = 0
+
+while i < 10:
+   
+    suma_total = suma_total + vector[i]
+    
+    i = i + 1
+
+print("El vector ingresado es:", vector)
+print("La suma de todos los valores del vector es:", suma_total)
+
+print("--------------------------------------------")
+print("Fin del programa")
