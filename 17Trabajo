@@ -1,0 +1,12 @@
+texto = input("Introduce una cadena de texto: ")
+
+print("Los caracteres en posiciones pares son:")
+
+largo = len(texto)
+
+
+for posicion in range(0, largo, 2):
+   
+    letra = texto[posicion]
+    
+    print("En la posicion", posicion, "esta la letra", letra)
