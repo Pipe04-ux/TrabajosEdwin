@@ -1,0 +1,18 @@
+cadena1 = input("Introduce la primera cadena: ")
+cadena2 = input("Introduce la segunda cadena: ")
+
+conteo1 = 0
+for letra in cadena1:
+    if letra == "a":
+        conteo1 = conteo1 + 1
+
+conteo2 = 0
+for letra in cadena2:
+    if letra == "a":
+        conteo2 = conteo2 + 1
+
+if conteo1 == conteo2:
+    print("Tienen el mismo numero de letras a, ambas tienen", conteo1)
+else:
+    print("Tienen diferente numero de letras a")
+    print("La primera tiene", conteo1, "y la segunda tiene", conteo2)
